@@ -1,0 +1,234 @@
+*{
+  box-sizing: border-box;
+  font-family:'Rubik',serif;
+  font-size: 16px;
+}
+body{
+  background-color: hsl(270, 20%, 96%);
+}
+body::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 500px;
+  height: 700px;
+  border-bottom-right-radius: 250px;
+  border-bottom-left-radius: 250px;
+  z-index: -1;
+  background-image: linear-gradient(0deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+}
+body::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 500px;
+  height: 700px;
+  border-top-right-radius: 250px;
+  border-top-left-radius: 250px;
+  z-index: -1;
+  background-color: hsl(290deg 37.5% 96.86%);
+}
+
+section{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 80px;
+  padding: 10px;
+}
+@media (max-width: 1050px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    top: 80%;
+    margin-left: 2%;
+  }
+}
+.ceantr{
+  position: relative;
+  background-color: hsl(270, 20%, 96%);
+  width: 350px;
+  height: 700px;
+  /* overflow: hidden; */
+  border: solid 15px white;
+  border-radius: 50px;
+}
+.ceantr::before{
+  content: "";
+  background-color: white;
+  width: 60%;
+  height: 30px;
+  position: absolute;
+  top: -1%;
+  left: 20%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.c1{
+  background-image: linear-gradient(90deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+  height: 100px;
+  border-radius: 10px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  padding: 30px;
+  padding-top: 60px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c1 div{
+  width: 80%;
+  position: relative;
+}
+.c1 img{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: solid white 2px;
+}
+.c1 h4 ,.c1 p{
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  margin-left: 50px;
+}
+.c1 h4{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.c1 p{
+  color: hsl(276, 100%, 81%);
+  font-weight: 400;
+  font-size: 14px;
+}
+.c2,.c3,.c7{
+  background-color: #eee6f5;
+  color: hsl(276, 55%, 52%);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 0 5px 10px;
+  font-size: xx-small;
+  width: 61%;
+}
+.c4{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 10px 10px 0;
+  gap: 15px;
+}
+.c4 img{
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+}
+.c5,.c6{
+  background-color: #ffffff;
+  color:  hsl(271, 15%, 43%);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 0 10px 10px;
+  font-size: xx-small;
+  width: 61%;
+}
+.c5{
+  position: absolute;
+  right: 10px;
+}
+.c6{
+  position: absolute;
+  right: 10px;
+  top: 51%;
+  width: 131px;
+}
+.c7{
+  margin-top: 92px;
+}
+.c8,.c9{
+  background-image: linear-gradient(270deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 15px 0 10px 10px;
+  border-radius: 20px;
+  color: white;
+  padding-left: 10px;
+}
+.c8::before,.c9::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  border:  hsl(289, 100%, 72%) solid 1px;
+  border-radius: 50%;
+}
+.c8 h4,.c9 h4{
+  padding-left: 10px;
+  color:hsl(293, 27%, 94%);
+  font-size: 12px;
+  font-weight: 400;
+}
+.c8 p,.c9 p{
+  padding-left: 60px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.c9 p{
+  padding-left: 80px;
+}
+.c10{
+  width: 90%;
+  height: 50px;
+  padding-left: 33px;
+  margin-left: 10px;
+  background-color:  hsl(0, 0%, 100%);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c10 h4{
+  font-size: small;
+  color:  hsl(206, 6%, 79%);
+  font-weight: 400;
+}
+.c10 i{
+  margin-right: 7px;
+  background-color: hsl(271, 36%, 24%);
+  width: 40px;
+  height: 40px;
+  font-size: large;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scaned{
+  width: 442px;
+}
+@media (max-width: 1050px) {
+  .scaned {
+    text-align: center;
+    width: auto;
+  }
+}
+.scaned h1{
+  font-size: xx-large;
+  font-weight: 700;
+  color: hsl(271, 36%, 24%);
+}
+.scaned p{
+  color: hsl(270, 7%, 64%);
+  font-weight: 400;
+  line-height: 25px;
+}
